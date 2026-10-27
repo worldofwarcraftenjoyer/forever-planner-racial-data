@@ -1,0 +1,1895 @@
+{
+  "format": "forever-planner-racials",
+  "formatVersion": 1,
+  "revision": 1,
+  "releaseNotes": "Initial reviewed racial feed: class/spec impact assessments for all 49 racials, including minimal Human Spirit impact for Rogue/Warrior, conditional caster sustain and high potential healer sustain. No racial mechanics or character data changed.",
+  "data": {
+    "version": 1,
+    "checkedDate": "2026-10-27",
+    "tuningDate": "2026-10-26",
+    "status": "Latest announced tuning; offline snapshot, not live realm verification",
+    "sources": {
+      "tuning": {
+        "title": "Wowhead · racial tuning · 26 Oct 2026",
+        "url": "https://www.wowhead.com/forever/news/racial-ability-tuning-pass-for-wow-forever-383597",
+        "published": "2026-10-26"
+      },
+      "patch": {
+        "title": "Wowhead · beta updates · 16 Oct 2026",
+        "url": "https://www.wowhead.com/forever/news/massive-racial-updates-wow-forever-beta-development-notes-383454",
+        "published": "2026-10-16"
+      },
+      "details": {
+        "title": "Wowhead · racial spell changes · 16 Oct 2026",
+        "url": "https://www.wowhead.com/forever/news/class-racials-in-wow-forever-receive-tuning-adjustments-in-latest-build-383457",
+        "published": "2026-10-16"
+      },
+      "overview": {
+        "title": "Wowhead · racial overview",
+        "url": "https://www.wowhead.com/forever/guide/new-race-class-combinations",
+        "published": "2026-10-16"
+      },
+      "original": {
+        "title": "Wowhead · Blizzard racial overview · 22 Sep 2026",
+        "url": "https://www.wowhead.com/forever/news/create-the-hero-you-want-to-be-in-world-of-warcraft-forever-383047",
+        "published": "2026-09-22"
+      },
+      "skyborne": {
+        "title": "Wowhead · Skyborne overview · 24 Oct 2026",
+        "url": "https://www.wowhead.com/forever/guide/skyborne-race-overview",
+        "published": "2026-10-24"
+      },
+      "blizzard": {
+        "title": "Blizzard · beta notes through 26 Oct 2026",
+        "url": "https://eu.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-26-october/631316",
+        "published": "2026-10-26"
+      },
+      "design": {
+        "title": "Mobalytics · reference layout (older tuning)",
+        "url": "https://mobalytics.gg/wow-forever/guides/wow-forever-racial-abilities",
+        "published": "2026-10-25"
+      },
+      "priest-holy": {
+        "title": "Wowhead · Priest racial abilities · 8 Oct 2026",
+        "url": "https://www.wowhead.com/forever/guide/classes/priest/holy/healer-abilities",
+        "published": "2026-10-08"
+      },
+      "priest-shadow": {
+        "title": "Wowhead · Priest racial spell uses · 8 Oct 2026",
+        "url": "https://www.wowhead.com/forever/guide/classes/priest/shadow/dps-abilities",
+        "published": "2026-10-08"
+      },
+      "priest-overview": {
+        "title": "Wowhead · Priest class deep dive",
+        "url": "https://www.wowhead.com/forever/news/priest-and-warrior-class-deep-dives-in-world-of-warcraft-forever-383192",
+        "published": "2026-10-01"
+      },
+      "priest-flash": {
+        "title": "Wowhead · Confounding Flash spell",
+        "url": "https://www.wowhead.com/forever/spell=1277455/confounding-flash",
+        "checked": "2026-10-27"
+      },
+      "priest-contingency": {
+        "title": "Wowhead · Contingency Plan spell",
+        "url": "https://www.wowhead.com/forever/spell=1277640/contingency-plan",
+        "checked": "2026-10-27"
+      },
+      "stats": {
+        "title": "Wowhead · Classic stat principles (not Forever tuning)",
+        "label": "Stat principles",
+        "url": "https://www.wowhead.com/classic/guide/classic-wow-stats-and-attributes-overview",
+        "published": "2024-11-19",
+        "checked": "2026-10-27"
+      },
+      "priest-discipline": {
+        "title": "Wowhead · Forever Discipline Priest: regeneration and racial uses",
+        "label": "Priest role guide",
+        "url": "https://www.wowhead.com/forever/guide/classes/priest/discipline/overview-pve-healer",
+        "published": "2026-10-07",
+        "checked": "2026-10-27",
+        "classes": [
+          "Priest"
+        ]
+      },
+      "paladin-holy": {
+        "title": "Wowhead · Forever Holy Paladin overview (older racial tuning)",
+        "label": "Paladin role guide",
+        "url": "https://www.wowhead.com/forever/guide/classes/paladin/holy/overview-pve-healer",
+        "published": "2026-10-07",
+        "checked": "2026-10-27",
+        "classes": [
+          "Paladin"
+        ]
+      }
+    },
+    "abilities": [
+      {
+        "id": "command",
+        "race": "Orc",
+        "name": "Command",
+        "type": "Passive",
+        "icon": "pet",
+        "effect": "Hunter / Warlock pets only.",
+        "pve": "5% more {class} pet damage; not 5% more total character damage.",
+        "pvp": "5% more pet damage while your pet is attacking. No bonus without a pet.",
+        "sources": [
+          "tuning"
+        ],
+        "classes": [
+          "Hunter",
+          "Warlock"
+        ],
+        "recommendation": {
+          "focus": "Pet DPS · Hunter / Warlock",
+          "advice": "Useful while your pet deals damage. The more of your damage comes from the pet, the more this matters; a sacrificed, dismissed or inactive pet gains nothing.",
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · scales with active pet damage"
+          },
+          "impactByClass": {
+            "Hunter": {
+              "level": "moderate",
+              "summary": "Moderate impact · pet-focused Hunter damage"
+            },
+            "Warlock": {
+              "level": "situational",
+              "summary": "Situational impact · requires an active damage-dealing pet"
+            }
+          }
+        }
+      },
+      {
+        "id": "blood-fury",
+        "race": "Orc",
+        "name": "Blood Fury",
+        "type": "Active",
+        "icon": "burst",
+        "effect": "15 sec: +10% attack/spell power. Cooldown: 3 min.",
+        "pve": "Time an offensive burst window with your other damage cooldowns.",
+        "pvp": "Extra offensive pressure during a coordinated burst.",
+        "sources": [
+          "original",
+          "patch"
+        ],
+        "context": "power",
+        "recommendation": {
+          "focus": "Offensive DPS / tank threat",
+          "advice": "Use during attack- or spell-damage windows. Tank value is offensive threat, not damage reduction.",
+          "byRole": {
+            "healer": "Primarily an offensive option when you can safely deal damage; do not count this damage-oriented description as a verified healing cooldown."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · offensive burst"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · offensive use only"
+            },
+            "tank": {
+              "level": "moderate",
+              "summary": "Moderate impact · offensive threat window"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pve": "Spell-power burst for Druid damage windows."
+          },
+          "Hunter": {
+            "pve": "Attack-power burst for Hunter damage windows."
+          },
+          "Mage": {
+            "pve": "Spell-power burst for Mage damage windows."
+          },
+          "Paladin": {
+            "pve": "Spell-power burst for Paladin damage windows."
+          },
+          "Priest": {
+            "pve": "Spell-power burst for Priest damage windows."
+          },
+          "Rogue": {
+            "pve": "Attack-power burst for Rogue damage windows."
+          },
+          "Shaman": {
+            "pve": "Supports attack and spell damage during offensive windows."
+          },
+          "Warlock": {
+            "pve": "Spell-power burst for Warlock damage windows."
+          },
+          "Warrior": {
+            "pve": "Attack-power burst for Warrior damage windows."
+          }
+        }
+      },
+      {
+        "id": "hardiness",
+        "race": "Orc",
+        "name": "Hardiness",
+        "type": "Passive",
+        "icon": "shield",
+        "effect": "Stuns on you last 20% less.",
+        "pve": "Helps against encounter stuns that affect your character.",
+        "pvp": "Shortens stun-based crowd control so you can resume acting sooner.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "All PvP roles · stun-heavy encounters",
+          "advice": "Shorter stuns help you resume attacks, movement or healing. Its value depends on opponents or encounters actually stunning you, not on your damage specialization.",
+          "impact": {
+            "level": "situational",
+            "summary": "High PvP utility against stuns · encounter-dependent in PvE"
+          }
+        }
+      },
+      {
+        "id": "shatter-curse",
+        "race": "Orc",
+        "name": "Shatter Curse",
+        "type": "Active",
+        "icon": "cleanse",
+        "effect": "Dispels curses/banes; 5% less magic damage taken for 8 sec.",
+        "pve": "A defensive option when enemies apply curses or magic damage.",
+        "pvp": "Removes curse/banes pressure and helps cover incoming magic burst.",
+        "sources": [
+          "patch"
+        ],
+        "recommendation": {
+          "focus": "All roles · curses / magic damage",
+          "advice": "Use against removable curses or relevant magic damage. Tanks can cover a magic-damage window; healers and DPS can reduce pressure on themselves. Encounter-specific rather than a constant throughput bonus.",
+          "impact": {
+            "level": "situational",
+            "summary": "High defensive value when curses or magic pressure matter"
+          }
+        }
+      },
+      {
+        "id": "ruthless",
+        "race": "Human",
+        "name": "Ruthless",
+        "type": "Passive",
+        "icon": "burst",
+        "effect": "+1% critical chance.",
+        "pve": "More eligible critical strikes for damage and healing.",
+        "pvp": "Adds critical-strike potential to offensive or healing windows.",
+        "sources": [
+          "tuning"
+        ],
+        "context": "crit",
+        "recommendation": {
+          "focus": "DPS / eligible critical-heal builds",
+          "advice": "Useful for damage that can critically strike. It does not make every periodic or utility effect able to crit.",
+          "byRole": {
+            "healer": "Supports heals that can critically strike; value depends on your healing toolkit and crit interactions. Do not count non-critting shields or every heal-over-time tick as a benefit."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · eligible damage crits"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "moderate",
+              "summary": "Moderate impact · eligible critical heals"
+            },
+            "tank": {
+              "level": "moderate",
+              "summary": "Moderate impact · offensive threat, not mitigation"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Hunter": {
+            "pve": "Supports eligible critical strikes for Hunter damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Mage": {
+            "pve": "Supports eligible critical strikes for Mage damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Paladin": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Priest": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Rogue": {
+            "pve": "Supports eligible critical strikes for Rogue damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Shaman": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Warlock": {
+            "pve": "Supports eligible critical strikes for Warlock damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Warrior": {
+            "pve": "Supports eligible critical strikes for Warrior damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          }
+        }
+      },
+      {
+        "id": "human-spirit",
+        "race": "Human",
+        "name": "The Human Spirit",
+        "type": "Passive",
+        "icon": "resource",
+        "effect": "+10% Spirit.",
+        "pve": "Recovery between pulls; value depends on your resource mechanics.",
+        "pvp": "Recovery during downtime rather than an immediate resource refill.",
+        "sources": [
+          "tuning"
+        ],
+        "context": "spirit",
+        "recommendation": {
+          "focus": "Mana sustain · healers / Spirit-based builds",
+          "advice": "Minor baseline value for mana-using DPS; more useful when mana limits your uptime and your build activates Spirit-based regeneration. It does not directly increase damage.",
+          "byRole": {
+            "healer": "High potential value for sustained healing when Spirit regeneration is active. Talents and pauses in mana spending determine how much extra mana you actually gain; this is not a fixed healing increase."
+          },
+          "byClass": {
+            "Warrior": "Minimal gameplay impact for melee DPS or tanking: only minor downtime health recovery. No rage, direct damage or mitigation benefit.",
+            "Rogue": "Minimal gameplay impact for melee DPS: only minor downtime health recovery. No energy regeneration or direct damage benefit.",
+            "Mage": "Minor baseline DPS impact, with potentially greater sustain when mana is limiting. Mage Armor, Evocation or Spirit-regeneration talents can make it more useful; casting pattern matters."
+          },
+          "sources": [
+            "stats",
+            "priest-discipline",
+            "paladin-holy"
+          ],
+          "impact": {
+            "level": "minor",
+            "summary": "Minor baseline impact · conditional mana sustain"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "high",
+              "summary": "High potential impact · healer mana sustain"
+            }
+          },
+          "impactByClass": {
+            "Warrior": {
+              "level": "minimal",
+              "summary": "Low priority · minimal gameplay impact"
+            },
+            "Rogue": {
+              "level": "minimal",
+              "summary": "Low priority · minimal gameplay impact"
+            },
+            "Mage": {
+              "level": "minor",
+              "summary": "Minor baseline impact · can grow with regeneration tools"
+            }
+          },
+          "adviceByClassRole": {
+            "Priest:healer": "High potential impact for healer mana sustain, especially with Meditation if talented. Holy Spirit-scaling talents can add value; your casting pattern and chosen talents still matter.",
+            "Priest:caster": "Minor baseline damage impact; Spirit can improve mana sustain through relevant talents. Do not assume every Shadow build gets the same benefit.",
+            "Paladin:healer": "High potential impact for healing sustain when talents allow Spirit regeneration during casting. Otherwise, recovery breaks matter; it is not a guaranteed increase to every heal.",
+            "Paladin:tank": "Minor baseline impact for tanking: conditional mana sustain rather than direct threat or damage reduction. More useful if mana is limiting your tanking actions.",
+            "Paladin:melee": "Minor baseline impact for mana-using melee DPS. It may reduce mana downtime, but does not directly increase attack damage."
+          }
+        },
+        "classOverrides": {
+          "Rogue": {
+            "pve": "For Rogue, Spirit is recovery utility; there is no mana benefit."
+          },
+          "Warrior": {
+            "pve": "For Warrior, Spirit is recovery utility; there is no mana benefit."
+          }
+        }
+      },
+      {
+        "id": "will-to-survive",
+        "race": "Human",
+        "name": "Will to Survive",
+        "type": "Active",
+        "icon": "cleanse",
+        "effect": "Removes stuns.",
+        "pve": "Can release you from encounter stuns.",
+        "pvp": "Breaks a stun so you can reposition or respond.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "All PvP roles · stun-heavy encounters",
+          "advice": "A stun escape can restore control so you can heal, defend or attack. Plan around applicable cooldown restrictions; there is little value in a fight without stuns.",
+          "impact": {
+            "level": "situational",
+            "summary": "High PvP utility against stuns · encounter-dependent in PvE"
+          }
+        }
+      },
+      {
+        "id": "perception",
+        "race": "Human",
+        "name": "Perception",
+        "type": "Active",
+        "icon": "eye",
+        "effect": "20 sec of improved stealth detection.",
+        "pve": "Useful where enemies use stealth.",
+        "pvp": "Helps detect stealthed opponents; positioning still matters.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "PvP anti-stealth / objective defence",
+          "advice": "Useful for spotting stealth approaches before an opener. Protecting a healer or objective can matter as much as finding a target for DPS; this is not a general raid damage bonus.",
+          "impact": {
+            "level": "situational",
+            "summary": "High anti-stealth utility · minimal general PvE impact"
+          }
+        }
+      },
+      {
+        "id": "artisans-precision",
+        "race": "Dwarf",
+        "name": "Artisan’s Precision",
+        "type": "Passive",
+        "icon": "target",
+        "effect": "+1% spell/attack hit chance.",
+        "pve": "Helps offensive attacks/spells reach hit requirements.",
+        "pvp": "Improves eligible offensive hit reliability.",
+        "sources": [
+          "tuning"
+        ],
+        "recommendation": {
+          "focus": "DPS / tank offensive reliability",
+          "advice": "Useful for landing attacks or offensive spells while below the relevant hit requirement. Tank value is landing threat abilities; it is not extra mitigation.",
+          "byRole": {
+            "healer": "Heals on allies do not need offensive hit chance. Useful mainly when you attack or use hostile utility that can miss; do not treat this as a healing-throughput racial."
+          },
+          "sources": [
+            "stats"
+          ],
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact below the relevant offensive hit requirement"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "minimal",
+              "summary": "Low healing priority · minimal impact on friendly heals"
+            },
+            "tank": {
+              "level": "moderate",
+              "summary": "Moderate impact · landing offensive threat abilities"
+            }
+          }
+        }
+      },
+      {
+        "id": "stoneform",
+        "race": "Dwarf",
+        "name": "Stoneform",
+        "type": "Active",
+        "icon": "shield",
+        "effect": "8 sec: bleed/poison/disease immunity and reduced physical damage.",
+        "pve": "A defensive tool for matching debuffs and physical pressure.",
+        "pvp": "Counters matching debuffs and helps survive physical burst.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "Tanks / any role under physical or debuff pressure",
+          "advice": "A defensive choice against physical damage or eligible bleeds, poisons and diseases. Healers and DPS also benefit when targeted; encounter pressure matters more than a fixed class ranking.",
+          "byRole": {
+            "tank": "Useful for a planned physical-damage or eligible debuff window. It supplements your tank cooldowns rather than covering every kind of incoming damage."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "High defensive value against relevant physical damage or debuffs"
+          },
+          "impactByRole": {
+            "tank": {
+              "level": "high",
+              "summary": "High potential tanking impact · physical/debuff windows"
+            }
+          }
+        }
+      },
+      {
+        "id": "big-game-hunter",
+        "race": "Dwarf",
+        "name": "Big Game Hunter",
+        "type": "Passive",
+        "icon": "target",
+        "effect": "+5% damage against Beasts.",
+        "pve": "A damage benefit only when the target is a Beast.",
+        "pvp": "Useful against enemy targets classified as Beasts.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "DPS / tank threat · Beast targets",
+          "advice": "Useful only while damaging Beast-type enemies. Tanks may gain offensive threat; healing allies receives no direct benefit.",
+          "byRole": {
+            "healer": "Relevant when you contribute damage against Beasts. It does not improve your healing, and has no damage benefit against other creature types."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "Moderate damage impact against Beasts · none against other types"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · Beast damage only"
+            }
+          }
+        }
+      },
+      {
+        "id": "find-treasure",
+        "race": "Dwarf",
+        "name": "Find Treasure",
+        "type": "Active",
+        "icon": "eye",
+        "effect": "Treasure tracking; chance for extra chest items.",
+        "pve": "Helps with exploration and chest farming.",
+        "pvp": "Chest-farming utility for preparation.",
+        "sources": [
+          "original",
+          "patch"
+        ],
+        "recommendation": {
+          "focus": "Exploration / farming · all roles",
+          "advice": "Choose for treasure routes and looting convenience. It has no direct healing, tanking or DPS effect; class role does not establish a combat preference.",
+          "impact": {
+            "level": "utility",
+            "summary": "Exploration / farming utility · minimal direct combat impact"
+          }
+        }
+      },
+      {
+        "id": "elunes-light",
+        "race": "Night Elf",
+        "name": "Elune’s Light",
+        "type": "Active",
+        "icon": "burst",
+        "effect": "15 sec: +10% critical chance.",
+        "pve": "Plan around a temporary critical-strike window.",
+        "pvp": "Can support burst pressure or healing where critical strikes apply.",
+        "sources": [
+          "overview"
+        ],
+        "context": "crit",
+        "recommendation": {
+          "focus": "Burst DPS / eligible critical-heal builds",
+          "advice": "Time with damage that can critically strike. Effects that cannot crit do not gain the full benefit.",
+          "byRole": {
+            "healer": "A burst-healing option for heals that can crit. Discipline can pair eligible critical heals with Divine Aegis if talented; non-critting shields do not gain critical chance."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · eligible burst damage"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "moderate",
+              "summary": "Moderate impact · eligible burst critical heals"
+            },
+            "tank": {
+              "level": "moderate",
+              "summary": "Moderate impact · offensive threat window"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Hunter": {
+            "pve": "Supports eligible critical strikes for Hunter damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Mage": {
+            "pve": "Supports eligible critical strikes for Mage damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Paladin": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Priest": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Rogue": {
+            "pve": "Supports eligible critical strikes for Rogue damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Shaman": {
+            "pve": "Supports eligible critical strikes on damage and healing.",
+            "pvp": "Can support burst damage or eligible critical heals."
+          },
+          "Warlock": {
+            "pve": "Supports eligible critical strikes for Warlock damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          },
+          "Warrior": {
+            "pve": "Supports eligible critical strikes for Warrior damage.",
+            "pvp": "More critical-strike potential during offensive windows."
+          }
+        }
+      },
+      {
+        "id": "shadowmeld",
+        "race": "Night Elf",
+        "name": "Shadowmeld",
+        "type": "Active",
+        "icon": "eye",
+        "effect": "Stationary stealth.",
+        "pve": "Situational concealment while stationary.",
+        "pvp": "Can support concealment and positioning while stationary.",
+        "sources": [
+          "overview"
+        ],
+        "recommendation": {
+          "focus": "Positioning / stealth utility · all roles",
+          "advice": "Useful for stationary concealment and setting up an approach. Do not assume a boss-threat reset, moving stealth or immunity from this description.",
+          "byClass": {
+            "Rogue": "Useful for stationary concealment, but your class already has stealth tools. Choose based on positioning needs rather than assuming extra damage.",
+            "Druid": "Useful for stationary concealment, alongside your form-based toolkit. It is not moving stealth or a guaranteed tank threat reset."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "Situational stealth utility · minimal direct throughput impact"
+          }
+        }
+      },
+      {
+        "id": "quickness",
+        "race": "Night Elf",
+        "name": "Quickness",
+        "type": "Passive",
+        "icon": "speed",
+        "effect": "+1% dodge; +2% movement speed.",
+        "pve": "Mobility and dodge against attacks that can be dodged.",
+        "pvp": "Movement for positioning and dodge against eligible attacks.",
+        "sources": [
+          "details"
+        ],
+        "context": "stealth",
+        "recommendation": {
+          "focus": "Physical avoidance / positioning",
+          "advice": "Movement helps every role reposition. Dodge matters when eligible physical attacks reach you; it is not protection against all damage.",
+          "byRole": {
+            "tank": "A useful physical-avoidance and positioning option. Dodge is chance-based, not a guaranteed defensive cooldown.",
+            "hybrid": "Bear tanking can use the physical avoidance; Cat DPS can use positioning. The saved Feral label alone does not tell which role you play.",
+            "healer": "Positioning and survival when attacked, rather than direct healing throughput. Avoid deliberately taking melee hits to gain value."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate positioning value · conditional physical avoidance"
+          },
+          "impactByRole": {
+            "tank": {
+              "level": "moderate",
+              "summary": "Moderate tank utility · physical avoidance and movement"
+            },
+            "hybrid": {
+              "level": "moderate",
+              "summary": "Moderate utility · Bear avoidance / Cat positioning"
+            },
+            "healer": {
+              "level": "situational",
+              "summary": "Situational survival / movement · no direct healing increase"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pvp": "Movement for positioning and dodge against eligible attacks. Also improves your stealth concealment by one effective level."
+          },
+          "Rogue": {
+            "pvp": "Movement for positioning and dodge against eligible attacks. Also improves your stealth concealment by one effective level."
+          }
+        }
+      },
+      {
+        "id": "wisp-spirit",
+        "race": "Night Elf",
+        "name": "Wisp Spirit",
+        "type": "Passive",
+        "icon": "speed",
+        "effect": "+75% movement speed while dead.",
+        "pve": "Faster corpse travel after a death.",
+        "pvp": "Faster corpse runs after a death.",
+        "sources": [
+          "overview"
+        ],
+        "recommendation": {
+          "focus": "Recovery after death · all roles",
+          "advice": "Helps travel while dead. It does not improve performance while alive; class and combat role provide no special synergy.",
+          "impact": {
+            "level": "utility",
+            "summary": "Death-recovery utility · no gameplay impact while alive"
+          }
+        }
+      },
+      {
+        "id": "escape-artist",
+        "race": "Gnome",
+        "name": "Escape Artist",
+        "type": "Active",
+        "icon": "cleanse",
+        "effect": "Brief root/snare immunity.",
+        "pve": "Useful against movement restrictions.",
+        "pvp": "Helps maintain movement against roots and snares.",
+        "sources": [
+          "overview"
+        ],
+        "recommendation": {
+          "focus": "PvP mobility · melee uptime / caster escape",
+          "advice": "Useful against roots and snares to reach targets or escape pressure. It does not remove every form of crowd control.",
+          "byRole": {
+            "healer": "A mobility tool for escaping roots or snares and reaching healing range. It is survival and positioning utility, not extra healing per cast.",
+            "tank": "Useful when roots or snares prevent positioning or picking up enemies. Boss immunity and encounter mechanics still apply."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "High PvP mobility value against roots and snares"
+          }
+        }
+      },
+      {
+        "id": "eureka",
+        "race": "Gnome",
+        "name": "Eureka!",
+        "type": "Active",
+        "icon": "burst",
+        "effect": "8 sec: resource costs reduced by 10%; eligible damage increased by 10%.",
+        "pve": "A short efficiency and throughput window for eligible abilities.",
+        "pvp": "Can support burst and resource efficiency; periodic effects are excluded.",
+        "sources": [
+          "details",
+          "patch",
+          "blizzard"
+        ],
+        "context": "eureka",
+        "recommendation": {
+          "focus": "Burst damage / resource efficiency",
+          "advice": "Time with eligible damage and resource spending. Reduced costs are useful only while you are actually spending resources.",
+          "byClass": {
+            "Priest": "A healing/damage efficiency window; the documented Priest interaction includes Power Word: Shield. Time it around planned casts rather than assuming every effect is increased."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · short burst / resource-efficiency window"
+          },
+          "impactByClass": {
+            "Priest": {
+              "level": "high",
+              "summary": "High potential impact · healing / damage efficiency window"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Hunter": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Mage": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Paladin": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Priest": {
+            "effect": "8 sec: 10% lower costs and +10% eligible damage/healing.",
+            "pve": "A short healing/damage efficiency window; also benefits Power Word: Shield.",
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Rogue": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Shaman": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Warlock": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          },
+          "Warrior": {
+            "pvp": "Can support burst and resource efficiency; periodic effects are excluded. This is an 8-second buff, not three charges."
+          }
+        }
+      },
+      {
+        "id": "expansive-mind",
+        "race": "Gnome",
+        "name": "Expansive Mind",
+        "type": "Passive",
+        "icon": "resource",
+        "effect": "+5% maximum mana, rage or energy.",
+        "pve": "More resource capacity to manage encounters.",
+        "pvp": "More resource capacity for your chosen class.",
+        "sources": [
+          "original"
+        ],
+        "context": "resource",
+        "recommendation": {
+          "focus": "Resource flexibility · mana / rage / energy users",
+          "advice": "A larger resource pool offers more room for spending or pooling. It does not itself increase regeneration or guarantee more damage.",
+          "byRole": {
+            "healer": "Additional mana capacity can support a healing sequence. It is not mana regeneration and does not remove the need to manage spell costs."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate resource flexibility · no regeneration increase"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "moderate",
+              "summary": "Moderate healing sustain value · extra mana capacity"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "effect": "+5% maximum mana."
+          },
+          "Hunter": {
+            "effect": "+5% maximum mana."
+          },
+          "Mage": {
+            "effect": "+5% maximum mana."
+          },
+          "Paladin": {
+            "effect": "+5% maximum mana."
+          },
+          "Priest": {
+            "effect": "+5% maximum mana."
+          },
+          "Rogue": {
+            "effect": "+5% maximum energy."
+          },
+          "Shaman": {
+            "effect": "+5% maximum mana."
+          },
+          "Warlock": {
+            "effect": "+5% maximum mana."
+          },
+          "Warrior": {
+            "effect": "+5% maximum rage."
+          }
+        }
+      },
+      {
+        "id": "engineering-specialization",
+        "race": "Gnome",
+        "name": "Engineering Specialization",
+        "type": "Passive",
+        "icon": "tool",
+        "effect": "More reliable Engineering devices.",
+        "pve": "Useful when you use Engineering devices.",
+        "pvp": "Helps when Engineering devices are part of your preparation.",
+        "sources": [
+          "overview"
+        ],
+        "recommendation": {
+          "focus": "Engineering users · any role",
+          "advice": "Useful when your plan actually uses Engineering devices. Without relevant devices there is no direct role benefit; exact value depends on the item and its failure behaviour.",
+          "impact": {
+            "level": "situational",
+            "summary": "Useful with Engineering devices · minimal impact without them"
+          }
+        }
+      },
+      {
+        "id": "will-of-forsaken",
+        "race": "Undead",
+        "name": "Will of the Forsaken",
+        "type": "Active",
+        "icon": "cleanse",
+        "effect": "Removes charm, fear and sleep; unavailable during Scatter Shot.",
+        "pve": "A response to matching encounter crowd control.",
+        "pvp": "Counters charm/fear/sleep, not stuns; cannot be used during Scatter Shot.",
+        "sources": [
+          "original",
+          "patch"
+        ],
+        "recommendation": {
+          "focus": "All PvP roles · fear / charm / sleep encounters",
+          "advice": "Useful when the listed control effects would stop you healing, defending or attacking. Its restrictions still apply; do not treat it as an answer to every crowd-control effect.",
+          "impact": {
+            "level": "situational",
+            "summary": "High PvP utility against fear / charm / sleep"
+          }
+        }
+      },
+      {
+        "id": "cannibalize",
+        "race": "Undead",
+        "name": "Cannibalize",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "Corpse-based health/mana recovery.",
+        "pve": "Between-pull sustain when a suitable corpse is available.",
+        "pvp": "Situational recovery when you can safely use a corpse.",
+        "sources": [
+          "original"
+        ],
+        "context": "corpse",
+        "recommendation": {
+          "focus": "Solo recovery / mana users between fights",
+          "advice": "Useful for recovery with an eligible corpse and a safe opportunity. Movement, actions or incoming damage can interrupt it; it is unreliable during active pressure.",
+          "byRole": {
+            "healer": "Can restore resources between fights without spending a heal. Use only when a safe corpse-based recovery window will not delay needed group healing."
+          },
+          "byClass": {
+            "Warrior": "Useful for health recovery between pulls with an eligible corpse. The mana component does nothing for rage.",
+            "Rogue": "Useful for health recovery between pulls with an eligible corpse. The mana component does nothing for energy."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "Moderate solo / between-pull recovery · safe corpse required"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "situational",
+              "summary": "Moderate downtime recovery · low value during active healing"
+            }
+          }
+        },
+        "classOverrides": {
+          "Rogue": {
+            "pve": "Between-pull sustain when a suitable corpse is available. For Rogue, the mana component is not useful."
+          },
+          "Warrior": {
+            "pve": "Between-pull sustain when a suitable corpse is available. For Warrior, the mana component is not useful."
+          }
+        }
+      },
+      {
+        "id": "touch-of-grave",
+        "race": "Undead",
+        "name": "Touch of the Grave",
+        "type": "Passive",
+        "icon": "drain",
+        "effect": "Occasional health drain; 25 sec internal cooldown.",
+        "pve": "A small damage/sustain proc; no fixed DPS gain is assumed.",
+        "pvp": "Occasional extra pressure and sustain; not an on-demand heal.",
+        "sources": [
+          "details"
+        ],
+        "recommendation": {
+          "focus": "Attacking roles / solo sustain",
+          "advice": "A damage-and-recovery supplement while you trigger it with eligible attacks or spells. It is not a dependable emergency heal.",
+          "byRole": {
+            "healer": "A supplemental benefit when you contribute eligible damage. Do not assume casting only friendly heals will trigger it or rely on it for an emergency save."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "minor",
+            "summary": "Minor supplemental damage / self-recovery"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · requires eligible offensive triggers"
+            }
+          }
+        }
+      },
+      {
+        "id": "underwater-breathing",
+        "race": "Undead",
+        "name": "Underwater Breathing",
+        "type": "Passive",
+        "icon": "resource",
+        "effect": "Underwater breath lasts 300% longer.",
+        "pve": "Useful on underwater routes.",
+        "pvp": "Longer underwater routes and breathing time.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "Underwater exploration · all roles",
+          "advice": "Useful on underwater routes or objectives. It does not add damage, healing or mitigation; class-role preference is minimal.",
+          "impact": {
+            "level": "utility",
+            "summary": "Underwater-route utility · minimal general combat impact"
+          }
+        }
+      },
+      {
+        "id": "war-stomp",
+        "race": "Tauren",
+        "name": "War Stomp",
+        "type": "Active",
+        "icon": "control",
+        "effect": "2 sec nearby stun. Cooldown: 90 sec.",
+        "pve": "Can help control enemies that are susceptible to stuns.",
+        "pvp": "A short crowd-control opportunity; enemy immunity still matters.",
+        "sources": [
+          "original",
+          "patch"
+        ],
+        "recommendation": {
+          "focus": "Close-range control · PvP / eligible adds",
+          "advice": "Useful to create space, interrupt an eligible enemy or assist a teammate nearby. Stun-immune enemies gain no such control effect.",
+          "byRole": {
+            "tank": "Can help control nearby stunnable adds. It is not a boss stun or a substitute for tank mitigation.",
+            "hybrid": "Useful for nearby stunnable enemies whether tanking or dealing damage; check form and ability-use restrictions in game.",
+            "healer": "Can create a brief opening to move or cast when enemies are close. Do not enter dangerous melee range solely to use it."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "High close-range control value against stunnable enemies"
+          }
+        }
+      },
+      {
+        "id": "endurance",
+        "race": "Tauren",
+        "name": "Endurance",
+        "type": "Passive",
+        "icon": "shield",
+        "effect": "+5% health; no extra hit or critical-damage modifier.",
+        "pve": "A larger health buffer for incoming damage.",
+        "pvp": "A larger health buffer against player pressure.",
+        "sources": [
+          "tuning"
+        ],
+        "recommendation": {
+          "focus": "Tanks / survival in every role",
+          "advice": "A larger health buffer helps survive incoming damage. It does not reduce damage taken or directly improve healing or DPS.",
+          "byRole": {
+            "tank": "A useful health buffer for tanking, especially when surviving a damage spike matters. It is extra health, not extra hit chance or damage reduction.",
+            "hybrid": "Useful as a health buffer when Bear tanking, and for survival as Cat DPS. Your current form and assignment determine the practical value."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate survival value · extra health buffer"
+          },
+          "impactByRole": {
+            "tank": {
+              "level": "high",
+              "summary": "High potential tanking value · larger health buffer"
+            },
+            "hybrid": {
+              "level": "moderate",
+              "summary": "Moderate survival value · more relevant while tanking"
+            }
+          }
+        }
+      },
+      {
+        "id": "plainsrunning",
+        "race": "Tauren",
+        "name": "Plainsrunning",
+        "type": "Passive",
+        "icon": "speed",
+        "effect": "+2% movement per stack, up to +60%; no mounted bonus.",
+        "pve": "Travel/repositioning while maintaining the movement-based effect.",
+        "pvp": "Movement for positioning while the movement-based effect is maintained.",
+        "sources": [
+          "tuning",
+          "details"
+        ],
+        "context": "plains",
+        "recommendation": {
+          "focus": "Travel / sustained movement · all roles",
+          "advice": "Useful on routes where you can keep moving. Stops and damage reduce its benefit; do not assume full stacks during a stationary tanking or casting assignment.",
+          "byRole": {
+            "healer": "Useful for travel and repositioning, but standing still to cast works against sustained movement. This is not a direct healing bonus."
+          },
+          "impact": {
+            "level": "utility",
+            "summary": "Travel / movement utility · limited during stationary combat"
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Hunter": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Mage": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Paladin": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Priest": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Rogue": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Shaman": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Warlock": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          },
+          "Warrior": {
+            "pvp": "Movement for positioning while the movement-based effect is maintained. Standing still or taking damage reduces the effect."
+          }
+        }
+      },
+      {
+        "id": "cultivation",
+        "race": "Tauren",
+        "name": "Cultivation",
+        "type": "Active",
+        "icon": "tool",
+        "effect": "Bonus herb gathering without Herbalism.",
+        "pve": "Material-gathering utility for preparation.",
+        "pvp": "Herb-gathering utility for consumable preparation.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "Gathering / economy · all roles",
+          "advice": "Useful for bonus herbs and resource gathering. It has no direct combat-role synergy and does not make you a stronger healer or tank by itself.",
+          "impact": {
+            "level": "utility",
+            "summary": "Gathering / economy utility · minimal direct combat impact"
+          }
+        }
+      },
+      {
+        "id": "berserking",
+        "race": "Troll",
+        "name": "Berserking",
+        "type": "Active",
+        "icon": "speed",
+        "effect": "10 sec: +10% casting/attack speed.",
+        "pve": "A speed window for eligible attacks and spellcasts.",
+        "pvp": "Faster eligible casts or attacks during pressure or recovery.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "DPS / cast-time healing windows",
+          "advice": "Useful for eligible attacks or spell casts during a planned window. Faster actions can increase resource spending; haste is not automatically more damage or healing over an entire fight.",
+          "byRole": {
+            "healer": "Useful when faster eligible healing casts are valuable and mana allows. Do not assume that every periodic effect gains extra ticks."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · eligible attack / casting-speed window"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "moderate",
+              "summary": "Moderate healing impact · cast speed with sufficient mana"
+            }
+          }
+        }
+      },
+      {
+        "id": "rapid-regeneration",
+        "race": "Troll",
+        "name": "Rapid Regeneration",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "Recovers 50% maximum health over time.",
+        "pve": "A recovery tool, not an instant half-health heal.",
+        "pvp": "Sustain over time when you can benefit from the recovery.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "Solo DPS / self-recovery · any injured role",
+          "advice": "Useful for recovering your own health when you can benefit from the full recovery period. It is not an instant emergency heal.",
+          "byRole": {
+            "healer": "Can save mana otherwise spent healing yourself, but does not heal your party. Use when safe without delaying urgent group healing.",
+            "tank": "An additional self-recovery option in a safe window, not instant protection against a lethal spike. Confirm its use restrictions in game before planning it into active tanking."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate solo sustain · self-recovery window required"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Lower healing priority · personal recovery, not group healing"
+            },
+            "tank": {
+              "level": "situational",
+              "summary": "Situational tank recovery · not instant spike protection"
+            }
+          }
+        }
+      },
+      {
+        "id": "beast-slaying",
+        "race": "Troll",
+        "name": "Beast Slaying",
+        "type": "Passive",
+        "icon": "target",
+        "effect": "+5% damage against Beasts.",
+        "pve": "Useful against Beast enemies only.",
+        "pvp": "Useful against enemy targets classified as Beasts.",
+        "sources": [
+          "original"
+        ],
+        "recommendation": {
+          "focus": "DPS / tank threat · Beast targets",
+          "advice": "Useful only while damaging Beast-type enemies. Tanks may gain offensive threat; healing allies receives no direct benefit.",
+          "byRole": {
+            "healer": "Relevant when you contribute damage against Beasts. It does not improve your healing, and has no damage benefit against other creature types."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "Moderate damage impact against Beasts · none against other types"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · Beast damage only"
+            }
+          }
+        }
+      },
+      {
+        "id": "regeneration",
+        "race": "Troll",
+        "name": "Regeneration",
+        "type": "Passive",
+        "icon": "resource",
+        "effect": "+20% health regeneration; 20% continues in combat.",
+        "pve": "Adds sustain through health regeneration.",
+        "pvp": "Passive sustain rather than a burst heal.",
+        "sources": [
+          "details"
+        ],
+        "recommendation": {
+          "focus": "Supplemental sustain · tanks / solo play",
+          "advice": "Useful when health regeneration can reduce downtime or sustained pressure. The bonus scales regeneration, not your maximum health; it is not a large emergency heal.",
+          "byRole": {
+            "tank": "A small source of sustained recovery while taking damage. Its value depends on your baseline regeneration and missing health; do not replace mitigation or healer support with it.",
+            "healer": "May reduce the healing you need on yourself while injured. It does not regenerate mana or strengthen heals on allies, so it is a secondary sustain benefit rather than a healing-throughput choice."
+          },
+          "impact": {
+            "level": "minor",
+            "summary": "Minor baseline impact · supplemental solo sustain"
+          },
+          "impactByRole": {
+            "tank": {
+              "level": "minor",
+              "summary": "Minor tanking impact · supplemental recovery only"
+            },
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · minor personal sustain"
+            }
+          }
+        }
+      },
+      {
+        "id": "wind-blessed",
+        "race": "Skyborne",
+        "name": "Wind Blessed",
+        "type": "Passive",
+        "icon": "speed",
+        "effect": "+2% melee, ranged and spellcasting haste.",
+        "pve": "Faster eligible melee/ranged attacks and spellcasts.",
+        "pvp": "Can help pressure and eligible cast throughput.",
+        "sources": [
+          "tuning"
+        ],
+        "recommendation": {
+          "focus": "DPS / cast-time healing",
+          "advice": "Useful for eligible melee, ranged or spellcasting actions. The gain depends on your rotation; do not assume all cooldowns or periodic ticks become faster.",
+          "byRole": {
+            "healer": "Can help deliver eligible casts sooner. It does not make each heal larger or automatically improve mana efficiency."
+          },
+          "impact": {
+            "level": "moderate",
+            "summary": "Moderate impact · eligible attacks and spell casts"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "moderate",
+              "summary": "Moderate healing impact · faster eligible casts"
+            }
+          }
+        }
+      },
+      {
+        "id": "elemental-insight",
+        "race": "Skyborne",
+        "name": "Elemental Insight",
+        "type": "Passive",
+        "icon": "target",
+        "effect": "+5% damage against Elementals.",
+        "pve": "A target-specific bonus when fighting Elementals.",
+        "pvp": "Only applies when the enemy target is an Elemental.",
+        "sources": [
+          "skyborne"
+        ],
+        "recommendation": {
+          "focus": "DPS / tank threat · Elemental targets",
+          "advice": "Useful only when damaging Elemental-type enemies. Tank value is offensive threat; healing allies gains no direct bonus.",
+          "byRole": {
+            "healer": "Relevant when contributing damage against Elementals. It does not strengthen heals, and does not improve damage against other creature types."
+          },
+          "impact": {
+            "level": "situational",
+            "summary": "Moderate damage impact against Elementals · none otherwise"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · Elemental damage only"
+            }
+          }
+        }
+      },
+      {
+        "id": "walk-on-air",
+        "race": "Skyborne",
+        "name": "Walk on Air",
+        "type": "Active",
+        "icon": "speed",
+        "effect": "10 sec downward glide. Cooldown: 90 sec.",
+        "pve": "Terrain and travel utility for reaching positions.",
+        "pvp": "Situational downward travel and terrain positioning.",
+        "sources": [
+          "skyborne",
+          "patch"
+        ],
+        "recommendation": {
+          "focus": "Travel / terrain utility · all roles",
+          "advice": "Useful when descending or navigating terrain. Check its movement restrictions in game; this is not a general tanking, healing or DPS cooldown.",
+          "impact": {
+            "level": "utility",
+            "summary": "Terrain / travel utility · minimal direct combat impact"
+          }
+        }
+      },
+      {
+        "id": "read-leyline",
+        "race": "Skyborne",
+        "name": "Read Leyline",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "15 sec: +50% health/mana regeneration. Attuned raises this to +100%.",
+        "pve": "Recovery utility; Attuned lasts 1 hour and survives death.",
+        "pvp": "Situational recovery. Innervate takes priority and blocks use while active.",
+        "sources": [
+          "tuning"
+        ],
+        "factions": [
+          "Alliance"
+        ],
+        "context": "leyline",
+        "recommendation": {
+          "focus": "Recovery / mana sustain · mana users",
+          "advice": "Useful when health or mana regeneration can actually occur. It boosts regeneration rather than instantly restoring a fixed portion of your resource pool.",
+          "byRole": {
+            "healer": "A recovery option when Spirit-based regeneration is active through a safe casting break or relevant talents. It cannot stack with Innervate; Attuned changes its strength."
+          },
+          "byClass": {
+            "Warrior": "Health recovery only: you have no mana pool. It does not regenerate rage or directly improve threat or mitigation.",
+            "Rogue": "Health recovery only: you have no mana pool. It does not regenerate energy or directly increase DPS."
+          },
+          "sources": [
+            "stats",
+            "tuning"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "Moderate recovery potential when regeneration is active"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "high",
+              "summary": "High potential mana-sustain value in a valid recovery window"
+            }
+          },
+          "impactByClass": {
+            "Warrior": {
+              "level": "low",
+              "summary": "Low combat priority · health recovery only"
+            },
+            "Rogue": {
+              "level": "low",
+              "summary": "Low combat priority · health recovery only"
+            }
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Hunter": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Mage": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Paladin": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Priest": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Rogue": {
+            "pve": "Health recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Shaman": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Warlock": {
+            "pve": "Health/mana recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          },
+          "Warrior": {
+            "pve": "Health recovery. Activate at a ley line for Attuned (1 hour, persists through death)."
+          }
+        }
+      },
+      {
+        "id": "skysight",
+        "race": "Skyborne",
+        "name": "Skysight",
+        "type": "Active",
+        "icon": "speed",
+        "effect": "15 sec: +15% movement; +30% while Charged.",
+        "pve": "Movement for travel or repositioning; Charged lasts 1 hour and survives death.",
+        "pvp": "A short movement window for positioning.",
+        "sources": [
+          "tuning"
+        ],
+        "factions": [
+          "Horde"
+        ],
+        "context": "skysight",
+        "recommendation": {
+          "focus": "Repositioning / PvP mobility · all roles",
+          "advice": "Useful for chasing, escaping or reaching an objective. Healers can reach allies; tanks can reposition. Value depends on movement needs, not on a direct damage or healing increase.",
+          "impact": {
+            "level": "situational",
+            "summary": "High movement utility when positioning determines the outcome"
+          }
+        },
+        "classOverrides": {
+          "Druid": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Hunter": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Mage": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Paladin": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Priest": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Rogue": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Shaman": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Warlock": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          },
+          "Warrior": {
+            "pve": "Activate at an elemental convergence for Charged (1 hour, persists through death)."
+          }
+        }
+      },
+      {
+        "id": "divine-grace",
+        "race": "Human",
+        "name": "Divine Grace",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "Instant ally heal below 50% health; clears Weakened Soul. Cannot target yourself.",
+        "pve": "Emergency ally recovery and an opportunity to shield that ally again.",
+        "pvp": "Can rescue a low-health ally and reopen their shield option.",
+        "sources": [
+          "priest-holy",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · ally rescue / healing support",
+          "advice": "Useful to save an eligible injured ally and support another shield by clearing Weakened Soul. It cannot save you directly because you cannot target yourself.",
+          "byRole": {
+            "caster": "An ally-support tool even while assigned DPS. Check form and casting restrictions; do not count the time spent supporting as free DPS."
+          },
+          "sources": [
+            "priest-holy"
+          ],
+          "impact": {
+            "level": "high",
+            "summary": "High potential ally-rescue value · eligible injured target required"
+          },
+          "impactByRole": {
+            "caster": {
+              "level": "situational",
+              "summary": "Situational off-healing value · costs time from DPS"
+            }
+          }
+        }
+      },
+      {
+        "id": "feedback",
+        "race": "Human",
+        "name": "Feedback",
+        "type": "Active",
+        "icon": "drain",
+        "effect": "15 sec: hostile spells against you can burn the caster’s mana and deal damage.",
+        "pve": "Situational value against enemies that cast spells at you.",
+        "pvp": "Mana pressure when hostile casters successfully target you.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · anti-caster PvP",
+          "advice": "Most useful when hostile casters target you and the mana-burn effect applies. Healing and Shadow roles can both use defensive pressure; little benefit when enemies do not cast at you.",
+          "sources": [
+            "priest-shadow"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High anti-caster potential when enemies cast at you"
+          }
+        }
+      },
+      {
+        "id": "desperate-prayer",
+        "race": "Dwarf",
+        "name": "Desperate Prayer",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "Instant self-heal. Unavailable in Shadowform.",
+        "pve": "An emergency self-heal; Shadow Priests must leave Shadowform first.",
+        "pvp": "A self-survival option under pressure.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · emergency self-survival",
+          "advice": "A self-heal for sudden damage, freeing time or mana for other actions. It does not directly heal a teammate.",
+          "byRole": {
+            "caster": "An emergency self-heal, but unavailable in Shadowform. Account for that restriction before relying on it during a Shadow damage rotation."
+          },
+          "sources": [
+            "priest-holy"
+          ],
+          "impact": {
+            "level": "high",
+            "summary": "High potential emergency self-survival value"
+          },
+          "impactByRole": {
+            "caster": {
+              "level": "situational",
+              "summary": "Situational self-survival · unavailable in Shadowform"
+            }
+          }
+        }
+      },
+      {
+        "id": "chastise",
+        "race": "Dwarf",
+        "name": "Chastise",
+        "type": "Active",
+        "icon": "control",
+        "effect": "Holy damage and 2 sec immobilize against Humanoids.",
+        "pve": "Short control when an eligible Humanoid needs to be stopped.",
+        "pvp": "A brief immobilize to help create distance or follow-up control.",
+        "sources": [
+          "priest-holy",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · Humanoid control / PvP",
+          "advice": "Useful to hold an eligible Humanoid briefly for spacing or coordinated pressure. It is an immobilize rather than a stun; creature and control immunities matter.",
+          "sources": [
+            "priest-holy"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High control potential against eligible Humanoids"
+          }
+        }
+      },
+      {
+        "id": "starshards",
+        "race": "Night Elf",
+        "name": "Starshards",
+        "type": "Active",
+        "icon": "burst",
+        "effect": "6 sec Arcane damage channel; 30 sec cooldown.",
+        "pve": "An additional damage option when you can safely channel.",
+        "pvp": "Situational damage if you can maintain the channel.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · optional damage / solo play",
+          "advice": "A damage option when you can commit to the channel. Healing roles should prioritize required heals, and DPS roles should compare the opportunity cost with their normal rotation.",
+          "sources": [
+            "priest-shadow"
+          ],
+          "impact": {
+            "level": "low",
+            "summary": "Low healing priority · optional damage / solo utility"
+          },
+          "impactByRole": {
+            "caster": {
+              "level": "situational",
+              "summary": "Situational DPS value · compare channel opportunity cost"
+            }
+          }
+        }
+      },
+      {
+        "id": "elunes-grace",
+        "race": "Night Elf",
+        "name": "Elune’s Grace",
+        "type": "Active",
+        "icon": "shield",
+        "effect": "Melee/ranged attacks have 50% less chance to hit you for 15 sec or until 3 misses.",
+        "pve": "A defensive window against eligible physical attacks.",
+        "pvp": "Helps against melee/ranged pressure; spell hits use different mechanics.",
+        "sources": [
+          "priest-holy",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · survival under weapon pressure",
+          "advice": "Useful when melee or ranged attackers focus you. It supports survival rather than healing throughput; do not treat it as protection from all spells.",
+          "sources": [
+            "priest-holy"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High survival potential under melee / ranged pressure"
+          }
+        }
+      },
+      {
+        "id": "confounding-flash",
+        "race": "Gnome",
+        "name": "Confounding Flash",
+        "type": "Active",
+        "icon": "control",
+        "effect": "0.5 sec cast: confuse up to 5 enemies for 3 sec; damage breaks it.",
+        "pve": "Short control when enemies need to be paused.",
+        "pvp": "A brief control opportunity for escape or follow-up actions.",
+        "sources": [
+          "priest-flash",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · crowd control / PvP peel",
+          "advice": "Useful for a short escape or peel when nearby enemies can be confused. Damage breaks the effect, so coordinate it with your group’s damage.",
+          "sources": [
+            "priest-flash"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High control potential · confusion breaks on damage"
+          }
+        }
+      },
+      {
+        "id": "contingency-plan",
+        "race": "Gnome",
+        "name": "Contingency Plan",
+        "type": "Active",
+        "icon": "shield",
+        "effect": "30 sec ally ward: damage dropping them below 35% health triggers an absorb and healing over time.",
+        "pve": "Pre-emptive protection before dangerous damage; amount depends on spell rank.",
+        "pvp": "An advance safety net for an ally who may be focused.",
+        "sources": [
+          "priest-contingency",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · proactive ally protection",
+          "advice": "Useful before predictable danger to an ally, for healing or DPS assignments. It is a conditional ward, so plan its trigger rather than treating it as an immediate heal.",
+          "sources": [
+            "priest-contingency",
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "high",
+            "summary": "High potential ally-protection value · trigger-dependent"
+          }
+        }
+      },
+      {
+        "id": "hex-of-weakness",
+        "race": "Troll",
+        "name": "Hex of Weakness",
+        "type": "Active",
+        "icon": "drain",
+        "effect": "Lowers melee attack power; healing received is reduced by 20% for 2 min.",
+        "pve": "A debuff for eligible melee enemies or enemies receiving healing.",
+        "pvp": "Healing reduction and weaker melee pressure on the affected target.",
+        "sources": [
+          "priest-holy",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · anti-healing PvP / melee debuff",
+          "advice": "Useful against targets receiving healing or dealing relevant melee damage. Healing and Shadow Priests can support their team with it; it is not a bonus to your own healing.",
+          "sources": [
+            "priest-holy"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High PvP anti-healing value · target-dependent in PvE"
+          }
+        }
+      },
+      {
+        "id": "shadowguard",
+        "race": "Troll",
+        "name": "Shadowguard",
+        "type": "Active",
+        "icon": "shield",
+        "effect": "3 charges of retaliatory Shadow damage when attacked.",
+        "pve": "Additional damage when enemies attack you.",
+        "pvp": "Retaliatory pressure while opponents attack you.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · retaliation / solo play",
+          "advice": "Useful when eligible attacks reach you. Do not deliberately take avoidable damage for retaliation; PvE healers should normally avoid being attacked.",
+          "sources": [
+            "priest-shadow"
+          ],
+          "impact": {
+            "level": "minor",
+            "summary": "Minor retaliatory damage · only while attacked"
+          },
+          "impactByRole": {
+            "healer": {
+              "level": "low",
+              "summary": "Low healing priority · avoid taking hits for retaliation"
+            }
+          }
+        }
+      },
+      {
+        "id": "touch-of-weakness",
+        "race": "Undead",
+        "name": "Touch of Weakness",
+        "type": "Active",
+        "icon": "drain",
+        "effect": "The next melee hit against you triggers Shadow damage and a melee attack-power debuff.",
+        "pve": "Extra damage and mitigation when an enemy reaches you in melee.",
+        "pvp": "A response to melee attackers reaching you.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 10,
+        "recommendation": {
+          "focus": "Priest · defence against melee attackers",
+          "advice": "Useful when an enemy reaches you in melee. It offers retaliation and a debuff, not a reason to stand in melee or a direct healing increase.",
+          "sources": [
+            "priest-shadow"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "Situational melee defence · minimal value without melee attackers"
+          }
+        }
+      },
+      {
+        "id": "dark-sacrifice",
+        "race": "Undead",
+        "name": "Dark Sacrifice",
+        "type": "Active",
+        "icon": "resource",
+        "effect": "Converts your health to mana over 15 sec; mana gained scales with Spirit.",
+        "pve": "Trades health for mana when you can cover the health cost.",
+        "pvp": "Situational mana recovery when your health is safe to spend.",
+        "sources": [
+          "priest-shadow",
+          "priest-overview",
+          "blizzard"
+        ],
+        "classes": [
+          "Priest"
+        ],
+        "minLevel": 20,
+        "recommendation": {
+          "focus": "Priest · mana sustain with health to spare",
+          "advice": "Useful when additional mana is worth the health cost. Spirit scaling can matter, but safety and recovery support determine whether to use it.",
+          "byRole": {
+            "healer": "A mana-sustain option when your health is safe to spend and you can cover the cost. Avoid using it into dangerous incoming damage.",
+            "caster": "A mana-sustain option when you can safely trade health. It is not free mana, and the Spirit scaling does not justify risking death."
+          },
+          "sources": [
+            "priest-discipline"
+          ],
+          "impact": {
+            "level": "situational",
+            "summary": "High mana-recovery potential when health is safe to spend"
+          }
+        }
+      }
+    ]
+  }
+}
