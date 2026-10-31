@@ -55,8 +55,12 @@ When preparing an update:
 4. Increment `revision`, update `releaseNotes`, and describe the change in the commit or pull request.
 5. Check that JSON parses and that existing records remain accessible.
 
-## Licensing and affiliation
+## Licence and attribution
 
-**No open-source licence has been selected for this repository yet.** Public visibility alone does not grant permission to reuse, redistribute, or modify its contents. The maintainer needs to choose and add an appropriate licence before describing this repository as open source.
+Original text, editorial recommendations, annotations, and original selection/arrangement of the data are shared under the **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)** licence **only to the extent they are original material and rights owned by the repository maintainer**. See [LICENSE](LICENSE) for the scope, exclusions, and a link to the full legal code.
+
+When redistributing or adapting licensed material, credit **worldofwarcraftenjoyer**, link to this repository and the CC BY 4.0 licence, and indicate changes. The licence permits commercial reuse of covered material with attribution. It does not imply the maintainer's endorsement of derivative work.
+
+**Not included in this licence:** third-party prose, artwork, source publications, game names, trademarks, character or ability names, or other third-party intellectual property. Facts and game mechanics are not claimed as original creations. The linked external references remain under their respective owners' terms. This licence does **not** cover the private Forever Planner source code, assets, or other repositories.
 
 This independent fan-made research dataset is not affiliated with or endorsed by Blizzard Entertainment or its partners. Game names and other third-party marks remain the property of their respective owners.
